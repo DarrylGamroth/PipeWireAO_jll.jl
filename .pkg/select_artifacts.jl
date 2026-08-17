@@ -17,11 +17,11 @@ artifacts_toml = joinpath(dirname(@__DIR__), "Artifacts.toml")
         libgfortran_version_mapping = BinaryPlatforms.libgfortran_version_mapping
         cxxstring_abi_mapping = BinaryPlatforms.cxxstring_abi_mapping
         libstdcxx_version_mapping = BinaryPlatforms.libstdcxx_version_mapping
-
+    
         # Helper function to collapse dictionary of mappings down into a regex of
         # named capture groups joined by "|" operators
         c(mapping) = string("(",join(["(?<$k>$v)" for (k, v) in mapping], "|"), ")")
-
+    
         # We're going to build a mondo regex here to parse everything:
         triplet_regex = Regex(string(
             "^",
@@ -38,7 +38,7 @@ artifacts_toml = joinpath(dirname(@__DIR__), "Artifacts.toml")
             "(?<tags>(?:-[^-]+\\+[^-]+)*)?",
             "\$",
         ))
-
+    
         m = match(triplet_regex, triplet)
         if m !== nothing
             # Helper function to find the single named field within the giant regex
@@ -61,7 +61,7 @@ artifacts_toml = joinpath(dirname(@__DIR__), "Artifacts.toml")
                     end
                 end
             end
-
+    
             # Extract the information we're interested in:
             arch = get_field(m, arch_mapping)
             os = get_field(m, os_mapping)
@@ -78,7 +78,7 @@ artifacts_toml = joinpath(dirname(@__DIR__), "Artifacts.toml")
                 return map(v -> Symbol(v[1]) => v[2], split.(tag_fields, "+"))
             end
             tags = split_tags(m["tags"])
-
+    
             # Special parsing of os version number, if any exists
             function extract_os_version(os_name, pattern)
                 m_osvn = match(pattern, m[os_name])
@@ -97,7 +97,7 @@ artifacts_toml = joinpath(dirname(@__DIR__), "Artifacts.toml")
             if os == "openbsd"
                 os_version = extract_os_version("openbsd", r".*openbsd([\d.]+)"sa)
             end
-
+    
             return Platform(
                 arch, os;
                 validate_strict,
