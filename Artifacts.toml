@@ -8,12 +8,41 @@ os = "linux"
     sha256 = "17c3852bb3f41c48744d354a03bfe9d3a89c566019acc43d5efcc797356628e5"
     url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+1/PipeWireAO.v1.7.0.x86_64-linux-gnu.tar.gz"
 [[PipeWireAO]]
+arch = "aarch64"
+git-tree-sha1 = "fb96642797c7706b22a09cc26a85b2de41e53e9b"
+libc = "glibc"
+os = "linux"
+
+    [[PipeWireAO.download]]
+    sha256 = "c32cffd5af9e54024327907a1d6e4cb1b68829af1a00d9b09bc0e5f99515c789"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+2/PipeWireAO.v1.7.0.aarch64-linux-gnu.tar.gz"
+[[PipeWireAO]]
 arch = "x86_64"
-git-tree-sha1 = "3026ed405ba35c6e4292265f7aef6bcae41a8ad2"
+git-tree-sha1 = "8d82ac8f72a51f51d8357c3ba63b387f9836af77"
 libc = "glibc"
 march = "avx2"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "cf33e8593208181b91f3059b3b5eedabca7591080a30a23e42a408ddf0ff927b"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+1/PipeWireAO.v1.7.0.x86_64-linux-gnu-march+avx2.tar.gz"
+    sha256 = "95b52605b8d7d2f44ea322449038d474f959a6de64ce02e0e80c14c50ebec583"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+2/PipeWireAO.v1.7.0.x86_64-linux-gnu-march+avx2.tar.gz"
+[[PipeWireAO]]
+arch = "x86_64"
+git-tree-sha1 = "e5e8217d55f00c9ec1d0ab102faa80bc520c6e27"
+libc = "glibc"
+march = "avx512"
+os = "linux"
+
+    [[PipeWireAO.download]]
+    sha256 = "8e03317b3d93312bfbfe4175b5fd972eac4ed715c88fd5dea6aeb29bea2b1a2a"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+2/PipeWireAO.v1.7.0.x86_64-linux-gnu-march+avx512.tar.gz"
+[[PipeWireAO]]
+arch = "x86_64"
+git-tree-sha1 = "58306a673a0ee7d08d3eaf35c3a90d9424f1ad39"
+libc = "glibc"
+march = "x86_64"
+os = "linux"
+
+    [[PipeWireAO.download]]
+    sha256 = "f7de4c0688773ef806fa8ea59da1eac0e65befd54c99cceb28c35a675b753fe8"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v1.7.0+2/PipeWireAO.v1.7.0.x86_64-linux-gnu-march+x86_64.tar.gz"
