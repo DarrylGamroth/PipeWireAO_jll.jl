@@ -13,7 +13,10 @@ end
 function augment_platform!(platform::Platform)
     @static if Sys.ARCH === :x86_64
         augment_microarchitecture!(platform)
-    else
-        platform
+        # Julia recognizes an intermediate AVX tier, but this package does
+        # not publish a distinct AVX artifact. Select the baseline artifact
+        # instead of falling through to the untagged compatibility entry.
+        platform["march"] == "avx" && (platform["march"] = "x86_64")
     end
+    return platform
 end
