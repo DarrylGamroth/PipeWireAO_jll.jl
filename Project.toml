@@ -1,6 +1,6 @@
 name = "PipeWireAO_jll"
 uuid = "cde84cf6-9a21-5ce0-b5e3-1526e778c30b"
-version = "1.7.0+12"
+version = "1.7.0+13"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
