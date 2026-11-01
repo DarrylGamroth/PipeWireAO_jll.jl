@@ -17,7 +17,11 @@ The tarballs for `PipeWireAO_jll.jl` have been built from these sources:
 
 `PipeWireAO_jll.jl` is available for the following platforms:
 
+* `Platform("aarch64", "linux"; libc = "glibc")` (`aarch64-linux-gnu`)
 * `Platform("x86_64", "linux"; libc = "glibc")` (`x86_64-linux-gnu`)
+* `Platform("x86_64", "linux"; march = "avx2", libc = "glibc")` (`x86_64-linux-gnu-march+avx2`)
+* `Platform("x86_64", "linux"; march = "avx512", libc = "glibc")` (`x86_64-linux-gnu-march+avx512`)
+* `Platform("x86_64", "linux"; march = "x86_64", libc = "glibc")` (`x86_64-linux-gnu-march+x86_64`)
 
 ## Products
 
