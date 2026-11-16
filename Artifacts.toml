@@ -1,48 +1,48 @@
 [[PipeWireAO]]
 arch = "aarch64"
-git-tree-sha1 = "c7bd388331361e52147a0c840fd7901c62d07f3c"
+git-tree-sha1 = "8114720d08d691a5d6c6e21eb402ede42d36f055"
 libc = "glibc"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "7c11ad423c8a793206846cd42135182e64c0ee8979a3a52eb9a6a80cd75f5e39"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.2+0/PipeWireAO.v4.0.2.aarch64-linux-gnu.tar.gz"
+    sha256 = "1ed1db339f92fb358be31f98453da23bb99288684c808c69d530170432ba026c"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.3+0/PipeWireAO.v4.0.3.aarch64-linux-gnu.tar.gz"
 [[PipeWireAO]]
 arch = "x86_64"
-git-tree-sha1 = "72b97753fbbc1417efc9339009a6abf82657e6e3"
+git-tree-sha1 = "0cbe3787db6ac8735a50eda94ad8e99c695569f9"
 libc = "glibc"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "55dfdba8eeee6eada025fecc983931ab6c719fc70c8792432e8223728be87ef4"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.2+0/PipeWireAO.v4.0.2.x86_64-linux-gnu.tar.gz"
+    sha256 = "10b854f2c99434b29a5f7b4954f47096d702cda4d8c0c225ded38750ee26be54"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.3+0/PipeWireAO.v4.0.3.x86_64-linux-gnu.tar.gz"
 [[PipeWireAO]]
 arch = "x86_64"
-git-tree-sha1 = "b84754cc61ae9a8e33d31ec4352f188fa5405581"
+git-tree-sha1 = "926567c8aaabc65a5a860119c1ba81bfeaa38061"
 libc = "glibc"
 march = "avx2"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "0f01585ae9cae1e5405af2a5589f426d158a76327e5df550f97c9143d295a4d5"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.2+0/PipeWireAO.v4.0.2.x86_64-linux-gnu-march+avx2.tar.gz"
+    sha256 = "2b4206ffe1667be1e81265542ea8ceac3b58126f71cfc38ed13b9e186366a679"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.3+0/PipeWireAO.v4.0.3.x86_64-linux-gnu-march+avx2.tar.gz"
 [[PipeWireAO]]
 arch = "x86_64"
-git-tree-sha1 = "c6d03c40bde2e6b72bffe338a6362c3a68ae54f7"
+git-tree-sha1 = "fc574ddb34b2991338eff1884d64af3a797b5e1e"
 libc = "glibc"
 march = "avx512"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "dfe4655338d031f41d5546eb071d5ac1280f5a78485fff7505c182405b62edd4"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.2+0/PipeWireAO.v4.0.2.x86_64-linux-gnu-march+avx512.tar.gz"
+    sha256 = "5fb6a1a829b23f342020894d01657e12f065589549e347c15e736e0aadcf4a67"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.3+0/PipeWireAO.v4.0.3.x86_64-linux-gnu-march+avx512.tar.gz"
 [[PipeWireAO]]
 arch = "x86_64"
-git-tree-sha1 = "72b97753fbbc1417efc9339009a6abf82657e6e3"
+git-tree-sha1 = "0cbe3787db6ac8735a50eda94ad8e99c695569f9"
 libc = "glibc"
 march = "x86_64"
 os = "linux"
 
     [[PipeWireAO.download]]
-    sha256 = "55dfdba8eeee6eada025fecc983931ab6c719fc70c8792432e8223728be87ef4"
-    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.2+0/PipeWireAO.v4.0.2.x86_64-linux-gnu-march+x86_64.tar.gz"
+    sha256 = "10b854f2c99434b29a5f7b4954f47096d702cda4d8c0c225ded38750ee26be54"
+    url = "https://github.com/DarrylGamroth/PipeWireAO_jll.jl/releases/download/PipeWireAO-v4.0.3+0/PipeWireAO.v4.0.3.x86_64-linux-gnu-march+x86_64.tar.gz"
